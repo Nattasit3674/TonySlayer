@@ -1,0 +1,26 @@
+<!-- book.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>aus</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h1>View aus</h1>
+    <table class="book-table">
+      <tr>
+        <th>name</th>
+        <th>last</th>
+      </tr>
+      <tr>
+        <td><%= aus.name %></td>
+        <td><%= aus.last %></td>
+      </tr>
+    </table>
+    <div class="link-center">
+      <a href="/update2/<%= aus.id_new %>">Edit</a>
+      <a href="/delete2/<%= aus.id_new %>">Delete</a>
+      <a href="/auss">Back to List</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!-- book.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>user</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h1>View user</h1>
+    <table class="book-table">
+      <tr>
+        <th>Name</th>
+        <th>Lastname</th>
+        <th>Number</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td><%= user.u_name %></td>
+        <td><%= user.u_last %></td>
+        <td><%= user.u_number %></td>
+        <td><%= user.u_email %></td>
+      </tr>
+    </table>
+    <div class="link-center">
+      <a href="/update3/<%= user.id_user %>">Edit</a>
+      <a href="/delete3/<%= user.id_user%>">Delete</a>
+      <a href="/users">Back to List</a>
+    </div>
+  </body>
+</html>

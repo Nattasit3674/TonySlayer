@@ -1,0 +1,29 @@
+<!-- create.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create User</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h1>Create User</h1>
+    <form method="post" action="/create3">
+      <label for="u_name">Name:</label>
+      <input type="text" id_user="u_name" name="u_name" />
+      <br />
+      <label for="u_last">Last:</label>
+      <input type="text" id_user="u_last" name="u_last" />
+      <br />
+      <label for="u_number">Number:</label>
+      <input type="text" id_user="u_number" name="u_number" />
+      <br />
+      <label for="u_email">Email:</label>
+      <input type="text" id_user="u_email" name="u_email" />
+      <br />
+      <input type="submit" value="create3" />
+    </form>
+    <div class="link-center">
+      <a href="/users">Back to List</a>
+    </div>
+  </body>
+</html>

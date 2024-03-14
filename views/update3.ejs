@@ -1,0 +1,31 @@
+<!-- update.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update Users</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h1>Update Users</h1>
+    <form method="post" action="/update3/<%= user.id_user %>">
+      <label for="u_name">Name:</label>
+      <input type="text" id_user="u_name" name="u_name" value="<%= user.u_name %>" />
+      <br />
+      <label for="u_last">Last:</label>
+      <input type="text" id_user="u_last" name="u_last" value="<%= user.u_last %>" />
+      <br />
+      <label for="u_number">Number:</label>
+      <input type="text" id_user="u_number" name="u_number" value="<%= user.u_number %>" />
+      <br />
+      <label for="u_email">Email:</label>
+      <input type="text" id_user="u_email" name="u_email" value="<%= user.u_email %>" />
+      <br />
+      <input type="submit" value="Update" />
+    </form>
+    <div class="link-center">
+      <a href="/user/<%= user.id_user %>">View</a>
+      <a href="/delete3/<%= user.id_user %>">Delete</a>
+      <a href="/users">Back to List</a>
+    </div>
+  </body>
+</html>

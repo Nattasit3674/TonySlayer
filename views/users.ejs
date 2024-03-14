@@ -1,0 +1,37 @@
+<!-- books.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Users</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <h1>Users</h1>
+  <table class="book-table">
+    <tr>
+      <th>Name</th>
+      <th>Lastname</th>
+      <th>Number</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+    <% for(var i=0; i < users.length; i++) { %>
+    <tr>
+      <td><%= users[i].u_name %></td>
+      <td><%= users[i].u_last %></td>
+      <td><%= users[i].u_number %></td>
+      <td><%= users[i].u_email %></td>
+      <td>
+        <a href="/user/<%= users[i].id_user %>">View</a>
+        <a href="/update3/<%= users[i].id_user %>">Edit</a>
+        <a href="/delete3/<%= users[i].id_user %>">Delete</a>
+      </td>
+    </tr>
+    <% } %>
+  </table>
+  <div class="link-center">
+    <a href="/create3">Create User</a>
+    <a href="/users">Go to Books</a>
+  </div>
+</body>
+</html>
